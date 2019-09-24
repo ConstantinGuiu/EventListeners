@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Listeners</title>
+    <link rel="stylesheet" text="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="cookie-shadow">
+        <div id='cookie-div'>
+            <p>This sites uses cookies. Actually it doesn't, it is just a dialog that is called via an EventListener :)</p>
+            <p>You can either click on any of these 2 buttons below, or you can press the Enter key.</p>
+            <div id="buttons-div">
+                <button class='button ck-btn' id='ok'>OK</button>
+                <button class='button ck-btn' id='no-choice'>No choice</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+
+        <h2>Turtle game</h2>
+            <div id="turt-anim-box">
+                <div id="play-area">
+                    <div id="playground">
+                        <div id="turt-char">
+                            <img id="turt-png" src="assets/turtle_01.png" alt="Turtle">
+                            <img id="turt-rainbow" src="assets/turtle_rainbow.png" alt="Turtle">
+                            <img id="turt-gif" src="assets/walking_turtle.gif" alt="Turtle">
+                        </div>
+                    </div>
+                    <div id='controls'>
+                        <p class="output-title">Animations count:</p>
+                        <p class="output"><span id="span-anim"></span> animations</p>
+                        <p class="output-title">Jumps count:</p>
+                        <p class="output"><span id="span-jump"></span> jumps</p>
+                        <p class="output-title">Rainbow count:</p>
+                        <p class="output"><span id="span-change"></span> changes</p>
+                        <p class="output-title">Talk count:</p>
+                        <p class="output"><span id="span-talk"></span> talks</p>
+                        <p id="rainbow-text">Rainbow</p>
+                        <input id="check" type="checkbox" name="darkmode">
+                    </div>
+                </div>
+            </div>
+            <div id='instructions-div'>
+                <h1>Instructions</h1>
+                <ul>
+                    <li>Hover the turtle to make it speak</li>
+                    <li>Double-click to make it jump</li>
+                    <li>Thick the checkbox to color the turtle until next action</li>
+                </ul>
+                <h1>Explanations</h1>
+                <p>There are 7 EventListeners on this webpage. First is when the page laods to call a function that opens a dialog with information about cookies.</p>
+                <p>Second is when you click any of those 2 buttons to "accept" the cookies and the third one is when you press the Enter key, also for "accepting" the cookies and to close the dialog box.</p>
+                <p>Right after you close the dialog box regarding cookies, an animation that moves the main character is triggered via a function call.</p>
+                <p>Hovering the mouse over the turtle will trigger another EventListener to make the animal "speak".</p>
+                <p>Double-clicking on the character makes this one "jump" and thicking the box in the right section will change the color of the turtle.</p>
+                <p>There are also some EventListeners when some animations end to change some style properties for different elements.</p>
+            </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
